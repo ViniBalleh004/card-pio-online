@@ -3,38 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles.css">
     <title>Pizzaria Folgaréu</title>
 </head>
 <body>
     <header class="banner">
         <div class="banner-container">
-            <h1>  Pizzaria Folgaréu</h1>
-            <p>A melhor pizza da região</p>
+            <img src="img/logo.png" alt="">
+            <b>A melhor pizza da região, feita com amor e ingredientes frescos!</n>
             <nav>
                 <a href="#pizzas">Pizzas</a>
                 <a href="#bebidas">Bebidas</a>
-                <a href="#pedidos">Pedido</a>
+                <a href="#pedidos">Pedidos</a>
                 <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
     <main>
-        <section id="Pizzas" class="categoria">
+        <section id="pizzas" class="categoria">
             <h2>Pizzas</h2>
             <div class="produto">
-                <img src="" alt="">
-                <p>pizza de peperonni</p>
-                <span class="preco">R$ 25,00</span>
-                <button class="adicionar">Adicionar</button>
+                <img src="img/pizza-de-calabresa.png" alt="Pizza de Calabresa">
+                <b>Pizza de Calabresa</b>
+                <p>Molho de tomate artesanal, calabresa fatiada, muçarela derretida e orégano.</p>
+                <p>Tamanho:(8 fatias)</p>
+                <span class="preco">R$ 45,00</span>
+                <button class="adicionar">Adicionar ao Pedido</button>
+            </div>
+            <div class="produto">
+                <img src="img/pizza-de-margherita.png" alt="Pizza Margherita">
+                <b>Pizza Margherita</b>
+                <p>Molho de tomate fresco, muçarela de búfala, manjericão e azeite de oliva.</p>
+                <p>Tamanho:(8 fatias)</p>
+                <span class="preco">R$ 48,00</span>
+                <button class="adicionar">Adicionar ao Pedido</button>
+            </div>
+            <div class="produto">
+                <img src="img/pizza-de-frango_com_catupiry.png" alt="Pizza de Frango com Catupiry">
+                <b>Pizza de Frango com Catupiry</b>
+                <p>Molho de tomate, frango desfiado, catupiry cremoso e milho verde.</p>
+                <p>Tamanho:(8 fatias)</p>
+                <span class="preco">R$ 50,00</span>
+                <button class="adicionar">Adicionar ao Pedido</button>
             </div>
         </section>
-        <section id="Bebidas" class="categoria">
 
+        <section id="bebidas" class="categoria">
+            <h2>Bebidas</h2>
+            <div class="produto">
+                <img src="img/refris.png" alt="Refrigerante">
+                <b>Refrigerante</b>
+                <p>Opções: Coca-Cola, Guaraná, Sprite (lata 350ml).</p>
+                <span class="preco">R$ 6,00</span>
+                <button class="adicionar">Adicionar ao Pedido</button>
+            </div>
+            <div class="produto">
+                <img src="img/sucos.png" alt="Suco Natural">
+                <b>Suco Natural</b>
+                <p>Sabores: Laranja, Limão, Morango (copo 300ml).</p>
+                <span class="preco">R$ 8,00</span>
+                <button class="adicionar">Adicionar ao Pedido</button>
+            </div>
         </section>
-        <section id="Pedido"></section>
-        <section id="Contato"></section>
+
+        <section id="pedidos" class="categoria">
+            <h2>Seu Pedido</h2>
+            <p>Aqui você pode revisar seu pedido antes de finalizar!</p>
+            <div class="pedido-lista" id="lista-pedidos">
+                <p><em>Seu carrinho está vazio por enquanto.</em></p>
+            </div>
+            <button class="finalizar">Finalizar Pedido</button>
+        </section>
+
+        <section id="contato" class="categoria">
+            <h2>Contato</h2>
+            <p>📍 Rua das Pizzas, 123 - Centro, Cidade</p>
+            <p>📞 (11) 98765-4321 | WhatsApp: (11) 91234-5678</p>
+            <p>🕒 Aberto de Seg a Dom, das 18h às 23h</p>
+            <a href="mailto:contato@pizzariafolgareu.com.br">📧 Envie um e-mail</a>
+        </section>
     </main>
-    <footer>&copy Pizzaria Folgaréu</footer>
+    <footer>
+        <p>© 2025 Pizzaria Folgaréu - Todos os direitos reservados</p>
+    </footer>
+    <script src="src/carrinhho.js"></script> <!-- Adicionei o JavaScript aqui -->
 </body>
 </html>

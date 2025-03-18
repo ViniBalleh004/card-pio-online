@@ -1,0 +1,197 @@
+/* Reset básico e comportamento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5e8c7;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #d32f2f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.banner-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #8b1e1e;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f44336;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.categoria {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.categoria h2 {
+    color: #d32f2f;
+    text-align: center;
+    width: 100%;
+}
+
+.produto {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.preco {
+    font-weight: bold;
+    color: #e64a19;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.adicionar {
+    background-color: #d32f2f;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adicionar:hover {
+    background-color: #8b1e1e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #3e2723;
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+/* Seção Pedidos */
+#pedidos {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.pedido-lista {
+    background-color: #fce4ec;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.finalizar {
+    background-color: #d32f2f;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.finalizar:hover {
+    background-color: #8b1e1e;
+}
+
+/* Seção Contato */
+#contato {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#contato a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #8b1e1e;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+#contato a:hover {
+    background-color: #f44336;
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1200px) {
+    .banner-container {
+        max-width: 1000px;
+    }
+    .produto {
+        max-width: 320px;
+        text-align: center;
+    }
+    .categoria {
+        justify-content: center;
+    }
+}

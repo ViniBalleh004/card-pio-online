@@ -7,13 +7,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5e8c7;
+    background-color: #f5e8c7; /* Fundo bege claro, remetendo a massa de pizza */
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #d32f2f;
+    background-color: #d32f2f; /* Vermelho quente típico de pizzaria */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -22,7 +22,6 @@ header {
 
 .banner-container {
     max-width: 1200px;
-    width: 90%;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -35,16 +34,15 @@ header {
     margin: 0 auto 0.5rem auto;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.banner-container p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    background-color: #8b1e1e;
+    background-color: #8b1e1e; /* Vermelho escuro quente */
     padding: 0.5rem 1rem;
     margin: 0.3rem;
     border-radius: 4px;
@@ -53,40 +51,33 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f44336;
+    background-color: #f44336; /* Vermelho mais claro no hover */
 }
 
 /* Main */
 main {
     max-width: 1200px;
-    width: 90%;
     margin: 1rem auto;
     padding: 0 1rem;
 }
 
 .categoria {
     margin-bottom: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
 }
 
 .categoria h2 {
-    color: #d32f2f;
+    color: #d32f2f; /* Vermelho quente para títulos */
     text-align: center;
-    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .produto {
     background-color: #fff;
     border-radius: 8px;
     padding: 1rem;
+    margin-bottom: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
-    flex: 1 1 300px;
-    max-width: 350px;
-    text-align: center;
 }
 
 .produto:hover {
@@ -104,13 +95,13 @@ main {
 
 .preco {
     font-weight: bold;
-    color: #e64a19;
+    color: #e64a19; /* Laranja quente para preços */
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
 .adicionar {
-    background-color: #d32f2f;
+    background-color: #d32f2f; /* Vermelho quente */
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -121,13 +112,13 @@ main {
 }
 
 .adicionar:hover {
-    background-color: #8b1e1e;
+    background-color: #8b1e1e; /* Vermelho escuro no hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background-color: #3e2723;
+    background-color: #3e2723; /* Marrom escuro, como madeira de forno */
     color: #fff;
     padding: 1rem 0;
     width: 100%;
@@ -142,7 +133,7 @@ footer {
 }
 
 .pedido-lista {
-    background-color: #fce4ec;
+    background-color: #fce4ec; /* Rosa claro quente */
     padding: 1rem;
     border-radius: 4px;
     margin-bottom: 1rem;
@@ -182,16 +173,69 @@ footer {
     background-color: #f44336;
 }
 
-/* Ajustes para telas grandes */
-@media (min-width: 1200px) {
-    .banner-container {
-        max-width: 1000px;
+/* Responsividade */
+@media (max-width: 1024px) {
+    .banner-container img {
+        max-width: 180px;
+    }
+    main {
+        padding: 0 0.5rem;
     }
     .produto {
-        max-width: 320px;
-        text-align: center;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
+}
+
+@media (max-width: 768px) {
+    .banner-container img {
+        max-width: 150px;
+    }
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .produto {
+        padding: 0.75rem;
+    }
+    .preco {
+        font-size: 1.2rem;
+    }
+    .adicionar, .finalizar {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
     .categoria {
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    .produto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container img {
+        max-width: 120px;
+    }
+    .banner-container p {
+        font-size: 0.9rem;
+    }
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .produto img {
+        max-width: 200px;
+    }
+    .preco {
+        font-size: 1.1rem;
     }
 }

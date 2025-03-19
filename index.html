@@ -4,88 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
-    <title>Pizzaria Folgaréu</title>
+    <title>Document</title>
 </head>
 <body>
     <header class="banner">
         <div class="banner-container">
-            <img src="img/logo.png" alt="">
-            <p>A melhor pizza da região, feita com amor e ingredientes frescos!</p>
+            <h1>Pizzaria Ratattulie</h1>
+            <p>A melhor pizza da região</p>
             <nav>
                 <a href="#pizzas">Pizzas</a>
                 <a href="#bebidas">Bebidas</a>
-                <a href="#pedidos">Pedidos</a>
+                <a href="#pedidos">Pedido</a>
                 <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
     <main>
-        <section id="pizzas" class="categoria">
-            <h2>Pizzas</h2>
+        <h2>Pizzas</h2>
+        <section id="Pizzas" class="categoria">
             <div class="produto">
-                <img src="img/pizza-de-calabresa.png" alt="Pizza de Calabresa">
-                <p>Pizza de Calabresa</p>
+                <img src="img/pizza-de-calabresa.png" alt="">
+                <h3>Pizza de Calabresa</h3>
                 <p>Molho de tomate artesanal, calabresa fatiada, muçarela derretida e orégano.</p>
-                <p>Tamanhos: P (4 fatias) | M (6 fatias) | G (8 fatias)</p>
-                <span class="preco">R$ 25,00 | R$ 35,00 | R$ 45,00</span>
-                <button class="adicionar">Adicionar ao Pedido</button>
+                <p>Tamanhos:(8 fatias)</p>
+                <span class="preco">R$ 45,00</span>
+                <button class="adicionar">Adicionar</button>
             </div>
+
             <div class="produto">
-                <img src="img/pizza-de-margherita.png" alt="Pizza Margherita">
-                <p>Pizza Margherita</p>
+                <img src="img/pizza-de-margherita.png" alt="">
+                <h3>Pizza Margherita</h3>
                 <p>Molho de tomate fresco, muçarela de búfala, manjericão e azeite de oliva.</p>
-                <p>Tamanhos: P (4 fatias) | M (6 fatias) | G (8 fatias)</p>
-                <span class="preco">R$ 28,00 | R$ 38,00 | R$ 48,00</span>
-                <button class="adicionar">Adicionar ao Pedido</button>
+                <p>Tamanhos:(8 fatias)</p>
+                <span class="preco">R$ 48,00</span>
+                <button class="adicionar">Adicionar</button>
             </div>
+
             <div class="produto">
-                <img src="img/pizza-de-frango_com_catupiry.png" alt="Pizza de Frango com Catupiry">
-                <p>Pizza de Frango com Catupiry</p>
+                <img src="img/pizza-de-frango_com_catupiry.png" alt="">
+                <h3>Pizza de Frango com Catupiry</h3>
                 <p>Molho de tomate, frango desfiado, catupiry cremoso e milho verde.</p>
-                <p>Tamanhos: P (4 fatias) | M (6 fatias) | G (8 fatias)</p>
-                <span class="preco">R$ 30,00 | R$ 40,00 | R$ 50,00</span>
-                <button class="adicionar">Adicionar ao Pedido</button>
+                <p>Tamanhos: (8 fatias)</p>
+                <span class="preco">R$ 50,00</span>
+                <button class="adicionar">Adicionar</button>
             </div>
         </section>
 
-        <section id="bebidas" class="categoria">
-            <h2>Bebidas</h2>
+        <h2>Bebidas</h2>
+        <section id="Bebidas" class="categoria">
             <div class="produto">
-                <img src="img//refris.png" alt="Refrigerante">
-                <p>Refrigerante</p>
-                <p>Opções: Coca-Cola, Guaraná, Sprite (lata 350ml).</p>
-                <span class="preco">R$ 6,00</span>
-                <button class="adicionar">Adicionar ao Pedido</button>
-            </div>
-            <div class="produto">
-                <img src="img/sucos.png" alt="Suco Natural">
-                <p>Suco Natural</p>
-                <p>Sabores: Laranja, Limão, Morango (copo 300ml).</p>
+                <img src="img/refris.png" alt="">
+                <h3>Refrigerantes latas</h3>
+                <p>Refrigerantes Coca-Cola,Fanta ,Kuat , Sprite(320 ml)</p>
                 <span class="preco">R$ 8,00</span>
-                <button class="adicionar">Adicionar ao Pedido</button>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="img/sucos.png" alt="">
+                <h3>Sucos</h3>
+                <p>Sucos Naturais (300ml)</p>
+                <span class="preco">R$ 6,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="img/chopp.png" alt="">
+                <h3>Chopps</h3>
+                <p>Chopps Gelados (720ml)</p>
+                <span class="preco">R$ 20,00</span>
+                <button class="adicionar">Adicionar</button>
             </div>
         </section>
-
-        <section id="pedidos" class="categoria">
+        
+        <section id="Pedido">
             <h2>Seu Pedido</h2>
-            <p>Aqui você pode revisar seu pedido antes de finalizar!</p>
-            <div class="pedido-lista">
-                <p><em>Seu carrinho está vazio por enquanto.</em></p>
-            </div>
-            <button class="finalizar">Finalizar Pedido</button>
+            <ul id="lista-pedido">
+            
+            </ul>
+            <p id="total">Total: R$: 0,00</p>
+            <button id="finalizar-pedido">finalizar</button>
         </section>
 
-        <section id="contato" class="categoria">
-            <h2>Contato</h2>
-            <p>📍 Rua das Pizzas, 123 - Centro, Cidade</p>
-            <p>📞 (11) 98765-4321 | WhatsApp: (11) 91234-5678</p>
-            <p>🕒 Aberto de Seg a Dom, das 18h às 23h</p>
-            <a href="mailto:contato@pizzariafolgaréu.com.br">📧 Envie um e-mail</a>
-        </section>
+        <section id="Contato"></section>
+        <h2>Contatos</h2>
     </main>
-    <footer>
-        <p>© 2025 Pizzaria Folgaréu - Todos os direitos reservados</p>
-    </footer>
-    <script src="src/carrinhho.js"> </script>
+    <footer>&copy Pizzaria Folgaréu</footer>
 </body>
+<script src="src/carrinhho.js"></script>
 </html>

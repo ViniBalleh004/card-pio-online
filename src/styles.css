@@ -1,216 +1,130 @@
-/* Reset básico e comportamento suave */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5e8c7; /* Fundo bege claro, remetendo a massa de pizza */
-    line-height: 1.6;
-    font-size: 1rem;
+    background:linear-gradient(275deg, red, orange);
 }
 
-/* Header */
-header {
-    background-color: #d32f2f; /* Vermelho quente típico de pizzaria */
-    color: #fff;
+header{
+    color: darkgoldenrod;
     text-align: center;
     padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-image: url('/img/fogo.png');
+    background-position: center;
 }
-
-.banner-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.banner-container img {
-    width: 90%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto 0.5rem auto;
-}
-
-.banner-container p {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-}
-
-nav a {
-    color: #fff;
+nav a{
+    color: whitesmoke;
     text-decoration: none;
-    background-color: #8b1e1e; /* Vermelho escuro quente */
-    padding: 1rem 1rem;
-    margin: 1rem 0;
+    background-color: darkred;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
     border-radius: 4px;
-    text-align: center;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+}
+nav a:hover{
+    background-color: rgb(207, 43, 43);
+    color: black;
 }
 
-nav a:hover {
-    background-color: #f44336; /* Vermelho mais claro no hover */
+main{
+    width: 80%;
+    margin: 2rem auto;
 }
-
-/* Main */
-main {
-    max-width: 80%;
-    margin: 1rem auto;
-    padding: 0 1rem;
-}
-
-.categoria {
+.categoria{
     margin-bottom: 2rem;
 }
-
-.categoria h2 {
-    color: #d32f2f; /* Vermelho quente para títulos */
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.produto {
-    background-color: #fff;
+.produto{
+    background-color: pink;
     border-radius: 8px;
     padding: 1rem;
-    text-align: center;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-
-.produto:hover {
-    transform: translateY(-5px);
-}
-
-.produto img {
+.produto img{
     width: 100%;
-    max-width: 300px;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
-    object-fit: cover;
 }
-
-.preco {
+.preco{
     font-weight: bold;
-    color: #e64a19; /* Laranja quente para preços */
-    font-size: 1.3rem;
+    color: red;
+    font-size: 22px;
     margin-bottom: 1rem;
 }
 
-.adicionar {
-    background-color: #d32f2f; /* Vermelho quente */
+.adicionar{
+    background-color: red;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 18px;
     cursor: pointer;
+}
+
+#Pedido {
+    background-color: #f9f9f9; /* Fundo mais neutro para o pedido */
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 1rem 0;
+    margin: 1rem 0;
+}
+
+#lista-pedido {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+   border-radius: 8px;
+}
+
+#total {
+    font-weight: bold;
+    color: darkred;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#finalizar-pedido {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
-.adicionar:hover {
-    background-color: #8b1e1e; /* Vermelho escuro no hover */
+#finalizar-pedido:hover {
+    background-color: rgb(207, 43, 43); /* Cor mais clara quando passa o mouse */
+    color: black;
 }
 
-/* Footer */
-footer {
+footer{
     text-align: center;
-    background-color: #3e2723; /* Marrom escuro, como madeira de forno */
-    color: #fff;
+    background-color: black;
+    color: whitesmoke;
     padding: 1rem 0;
-    width: 100%;
 }
-
-/* Seção Pedidos */
-#pedidos {
-    background-color: white;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.pedido-lista {
-    background-color: #fff; /* Rosa claro quente */
-    padding: 1rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.finalizar {
-    background-color: #d32f2f;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-.finalizar:hover {
-    background-color: #8b1e1e;
-}
-
-/* Seção Contato */
-#contato {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-}
-
-#contato a {
-    color: whi;
-    text-decoration: none;
-    background-color: #8b1e1e;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
-
-#contato a:hover {
-    background-color: #f44336;
-}
-
-@media (max-width: 768px) {
-    .banner-container img {
-        max-width: 150px;
+@media (min-width: 768px){
+    main{
+        width: 60%;
     }
-    nav a {
-        margin: 0.9rem 0,9rem;
-        display: inline-block;
-    }
-    .produto {
-        padding: 0.75rem;
-    }
-    .preco {
-        font-size: 1.2rem;
-    }
-    .adicionar, .finalizar {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-container img {
-        max-width: 120px;
-    }
-    .banner-container p {
-        font-size: 0.9rem;
-    }
-    nav a {
-        padding: 0.9rem 0.9rem;
-        font-size: 0.9rem;
-    }
-    .produto img {
-        max-width: 200px;
-    }
-    .preco {
-        font-size: 1.1rem;
+    .categoria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
     }
 }
